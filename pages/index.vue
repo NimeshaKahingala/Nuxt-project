@@ -79,28 +79,28 @@ export default {
       ],
       automotive_products: [
         {
-          id: 1,
+          id: 5,
           name: "Product A",
           image:
             "https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-05.jpg",
           shortDescription: "This is Product A",
         },
         {
-          id: 2,
+          id: 6,
           name: "Product B",
           image:
             "https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-06.jpg",
           shortDescription: "This is Product B",
         },
         {
-          id: 3,
+          id: 7,
           name: "Product C",
           image:
             "https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-07.jpg",
           shortDescription: "This is Product C",
         },
         {
-          id: 4,
+          id: 8,
           name: "Product D",
           image:
             "https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-08.jpg",
@@ -109,28 +109,28 @@ export default {
       ],
       consumer_products: [
         {
-          id: 1,
+          id: 9,
           name: "Product A",
           image:
             "https://tailwindui.com/img/ecommerce-images/category-page-07-product-01.jpg",
           shortDescription: "This is Product A",
         },
         {
-          id: 2,
+          id: 10,
           name: "Product B",
           image:
             "https://tailwindui.com/img/ecommerce-images/category-page-07-product-02.jpg",
           shortDescription: "This is Product B",
         },
         {
-          id: 3,
+          id: 11,
           name: "Product C",
           image:
             "https://tailwindui.com/img/ecommerce-images/category-page-07-product-03.jpg",
           shortDescription: "This is Product C",
         },
         {
-          id: 4,
+          id: 12,
           name: "Product D",
           image:
             "https://tailwindui.com/img/ecommerce-images/category-page-07-product-04.jpg",
