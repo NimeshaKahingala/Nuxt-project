@@ -6,7 +6,7 @@
           <DisclosureButton  class="text-white uppercase [item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'block rounded-md px-3 py-2 text-base font-medium']"><NuxtLink to="/">HELPFUL</NuxtLink></DisclosureButton>
           <li class="text-white uppercase [item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'block rounded-md px-3 py-2 text-base font-medium']"><NuxtLink to="/about">About</NuxtLink></li>
           <li class="text-white uppercase [item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'block rounded-md px-3 py-2 text-base font-medium']"><NuxtLink to="/contact">Contact</NuxtLink></li>
-          <li class="text-white uppercase [item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'block rounded-md px-3 py-2 text-base font-medium']"><NuxtLink to="/signin">Sign IN</NuxtLink></li>
+          <li class="text-white uppercase [item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'block rounded-md px-3 py-2 text-base font-medium']"><NuxtLink to="/login">Sign IN</NuxtLink></li>
         </ul>
         </Disclosure>
       </nav>
