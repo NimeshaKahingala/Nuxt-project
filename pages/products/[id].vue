@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <h1>{{ product.name }}</h1>
+  <div class="center m-10">
+    <h1 class="text-xl pb-8">{{ product.name }}</h1>
     <img :src="product.image" alt="Product Image" class="size-48"/>
     <p>{{ product.description }}</p>
-    <p>\${{ product.price }}</p>
+    <p>${{ product.price }}</p>
     <NuxtLink to="/">Back to List</NuxtLink>
   </div>
 </template>
