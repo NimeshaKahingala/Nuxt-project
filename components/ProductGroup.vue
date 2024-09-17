@@ -1,6 +1,6 @@
 <template>
   <div class="product-list">
-    <h2 class="uppercase text-center font-semibold">
+    <h2 class="card-title uppercase text-center font-semibold">
       TRENDING: {{title}}
     </h2>
     <div class="flex flex-wrap justify-between">
@@ -27,3 +27,13 @@ export default {
   },
 };
 </script>
+
+<style>
+
+.card-title {
+  color: #2A3952;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+</style>

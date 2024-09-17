@@ -4,32 +4,43 @@
       <Disclosure as="nav" class="nav" v-slot="{ open }">
         <ul class="nav-link-wrap flex container">
           <div class="left">
+            <div class="logo-wrap">
+              <img src="/assets/css/images/Helpful_logo.png" />
+            </div>
             <DisclosureButton
-              class="text-white uppercase [item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'block rounded-md px-3 py-2 text-base font-medium']"
+              class="website-name text-white uppercase [item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'block rounded-md px-3 py-2 text-base font-medium']"
               ><NuxtLink to="/">HELPFUL</NuxtLink></DisclosureButton
             >
 
             <div class="relative text-gray-600">
-        <input
-          type="search"
-          name="search"
-          v-model="query"
-          placeholder="Search for a product"
-          class="search-bar bg-gray-100 h-10 px-5 pr-10 text-sm focus:outline-none"
-      
-        />
-        <button
-          type="submit"
-          class="btn-search absolute right-0 top-0"
-          @click="handleSearch"
-        >
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
-  <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-</svg>
-
-        </button>
-      </div>
-            
+              <input
+                type="search"
+                name="search"
+                v-model="query"
+                placeholder="Search for a product"
+                class="search-bar bg-gray-100 h-10 px-5 pr-10 text-sm focus:outline-none"
+              />
+              <button
+                type="submit"
+                class="btn-search absolute right-0 top-0"
+                @click="handleSearch"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 text-white"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
           <div class="right">
             <li
@@ -81,9 +92,9 @@ import {
 }
 
 .btn-search {
-  background-color: #4EA641;
+  background-color: #4ea641;
   border-radius: 11px;
-  margin:5px 5px 0 0;
+  margin: 5px 5px 0 0;
   padding: 8px;
 }
 
@@ -93,7 +104,7 @@ import {
 }
 
 .nav {
-  background-color: #2A3952;
+  background-color: #2a3952;
 }
 
 .nav-link-wrap {
@@ -111,6 +122,11 @@ import {
   display: flex;
 }
 
+.logo-wrap {
+  align-items: center;
+  display: flex;
+}
+
 .search-bar {
   border-radius: 11px;
   height: 50px;
@@ -120,5 +136,11 @@ import {
 .right {
   display: flex;
   place-items: center;
+}
+
+.website-name {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 3px;
 }
 </style>
