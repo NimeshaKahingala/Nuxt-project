@@ -1,49 +1,31 @@
 <template>
-  <div>
+  <div class="container">
     <h1 class="text-center m-8 text-2xl font-bold">
       HELPFUL TAGLINE / DESCRIPTION
     </h1>
     <div class="product-categories">
-      <div class="product-list">
-        <h2 class="uppercase text-center font-semibold">TRENDING: MEDICAL SUPPLIES</h2>
-        <div class="flex flex-wrap justify-between">
-          <ProductCard
-            v-for="product in medical_products"
-            :key="product.id"
-            :product="product"
-          />
-        </div>
-      </div>
-      <div class="product-list">
-        <h2 class="uppercase text-center font-semibold">TRENDING: AUTOMOTIVE</h2>
-        <div class="flex flex-wrap justify-between">
-          <ProductCard
-            v-for="product in automotive_products"
-            :key="product.id"
-            :product="product"
-          />
-        </div>
-      </div>
-      <div class="product-list">
-        <h2 class="uppercase text-center font-semibold">TRENDING: CONSUMER GOODS</h2>
-        <div class="flex flex-wrap justify-between">
-          <ProductCard
-            v-for="product in consumer_products"
-            :key="product.id"
-            :product="product"
-          />
-        </div>
-      </div>
+      <ProductGroup
+      :products = medical_products
+      title="MEDICAL SUPPLIES"
+      />
+      <ProductGroup
+      :products = automotive_products
+      title="AUTOMOTIVE"
+      />
+      <ProductGroup
+      :products =consumer_products
+      title="CONSUMER GOODS"
+      />
     </div>
   </div>
 </template>
 
 <script>
-import ProductCard from "~/components/ProductCard.vue"; // Import the ProductCard component
+import ProductGroup from "~/components/ProductGroup.vue"; // Import the ProductCard component
 
 export default {
   components: {
-    ProductCard, // Register the component
+    ProductGroup, // Register the component
   },
   data() {
     return {
@@ -143,14 +125,20 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  margin: 0 auto;
+}
+
 .product-list {
   background-color: white;
   padding: 15px;
+  margin-bottom: 30px;
   width: 450px;
 }
 
 .product-categories {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 </style>
