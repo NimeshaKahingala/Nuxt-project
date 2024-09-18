@@ -100,7 +100,7 @@ import {
 
 .container {
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 1400px;
 }
 
 .nav {
@@ -109,7 +109,7 @@ import {
 
 .nav-link-wrap {
   justify-content: space-between;
-  padding: 20px 30px;
+  padding: 20px 0;
 }
 
 .nav-link {
