@@ -17,6 +17,9 @@
       title="CONSUMER GOODS"
       />
     </div>
+    <div class="related-items">
+      <RelatedItems/>
+    </div>
   </div>
 </template>
 
@@ -64,28 +67,28 @@ export default {
           id: 5,
           name: "Product A",
           image:
-            "https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-05.jpg",
+            "https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-01.jpg",
           shortDescription: "This is Product A",
         },
         {
           id: 6,
           name: "Product B",
           image:
-            "https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-06.jpg",
+            "https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-05.jpg",
           shortDescription: "This is Product B",
         },
         {
           id: 7,
           name: "Product C",
           image:
-            "https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-07.jpg",
+            "https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-07.jpg",
           shortDescription: "This is Product C",
         },
         {
           id: 8,
           name: "Product D",
           image:
-            "https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-08.jpg",
+            "https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-08.jpg",
           shortDescription: "This is Product D",
         },
       ],
