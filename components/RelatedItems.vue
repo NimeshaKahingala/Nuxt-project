@@ -65,7 +65,7 @@ const related_products = [
     background-color: white;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 
     .name {
         font-size: 16px;
