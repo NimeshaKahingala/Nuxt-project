@@ -1,13 +1,16 @@
 <template>
   <div class="related-products">
-    <div
-      class="center m-6"
-      v-for="related_product in related_products"
-      :key="related_product.id"
-      :product="related_product"
-    >
-      <img :src="related_product.image" alt="Product Image" class="size-48" />
-      <h1 class="name">{{ related_product.name }}</h1>
+    <h1 class="title">Related to items you’ve viewed</h1>
+    <div class="related-product-wrap">
+      <div
+        class="center m-6"
+        v-for="related_product in related_products"
+        :key="related_product.id"
+        :product="related_product"
+      >
+        <img :src="related_product.image" alt="Product Image" class="size-48" />
+        <h1 class="name">{{ related_product.name }}</h1>
+      </div>
     </div>
   </div>
 </template>
@@ -56,19 +59,29 @@ const related_products = [
       "https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-05.jpg",
   },
 ];
-
-
 </script>
 
 <style scoped>
 .related-products {
-    background-color: white;
+  background-color: white;
+  margin-bottom: 40px;
+
+  .name {
+    font-size: 16px;
+  }
+
+  .title {
+    color: #2A3952;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px 0 0 10px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .related-product-wrap {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
-
-    .name {
-        font-size: 16px;
-    }
+  }
 }
 </style>

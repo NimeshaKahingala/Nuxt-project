@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1 class="title text-center m-8 text-2xl font-bold">
+    <h1 class="main-title text-center m-8 text-2xl font-bold">
       HELPFUL TAGLINE / DESCRIPTION
     </h1>
     <div class="product-categories">
@@ -132,10 +132,15 @@ export default {
   margin: 0 auto;
 }
 
+.main-title {
+  color: #2A3952;
+  margin-top: 130px;
+}
+
 .product-list {
   background-color: white;
   padding: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   width: 450px;
 }
 
@@ -143,9 +148,5 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.title {
-  color: #2A3952;
 }
 </style>

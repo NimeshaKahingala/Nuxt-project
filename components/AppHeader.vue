@@ -105,6 +105,10 @@ import {
 
 .nav {
   background-color: #2a3952;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
 .nav-link-wrap {
